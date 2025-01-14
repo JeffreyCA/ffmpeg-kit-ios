@@ -1,0 +1,14 @@
+prefix=/Users/runner/work/ffmpeg-kit-ios/ffmpeg-kit-ios/ffmpeg-kit-src/prebuilt/apple-ios-arm64/ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/runner/work/ffmpeg-kit-ios/ffmpeg-kit-ios/ffmpeg-kit-src/prebuilt/apple-ios-arm64/ffmpeg/lib
+includedir=/Users/runner/work/ffmpeg-kit-ios/ffmpeg-kit-ios/ffmpeg-kit-src/prebuilt/apple-ios-arm64/ffmpeg/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 3.8.100
+Requires: libavutil >= 56.65.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample -lm
+Libs.private: 
+Cflags: -I${includedir}

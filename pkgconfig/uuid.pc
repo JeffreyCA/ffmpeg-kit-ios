@@ -1,0 +1,11 @@
+prefix=/Applications/Xcode_15.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk
+exec_prefix=${prefix}
+libdir=${exec_prefix}/usr/lib
+includedir=${prefix}/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 
+Requires:
+Cflags: -I${includedir}
+Libs: -L${libdir}

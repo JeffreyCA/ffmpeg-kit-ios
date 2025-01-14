@@ -1,0 +1,14 @@
+prefix=/Users/runner/work/ffmpeg-kit-ios/ffmpeg-kit-ios/ffmpeg-kit-src/prebuilt/apple-ios-arm64/ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/runner/work/ffmpeg-kit-ios/ffmpeg-kit-ios/ffmpeg-kit-src/prebuilt/apple-ios-arm64/ffmpeg/lib
+includedir=/Users/runner/work/ffmpeg-kit-ios/ffmpeg-kit-ios/ffmpeg-kit-src/prebuilt/apple-ios-arm64/ffmpeg/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 58.67.100
+Requires: libavcodec >= 58.123.100, libswresample >= 3.8.100, libavutil >= 56.65.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lm
+Libs.private: 
+Cflags: -I${includedir}

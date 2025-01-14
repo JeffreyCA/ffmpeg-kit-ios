@@ -1,0 +1,14 @@
+prefix=/Users/runner/work/ffmpeg-kit-ios/ffmpeg-kit-ios/ffmpeg-kit-src/prebuilt/apple-ios-arm64/ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/runner/work/ffmpeg-kit-ios/ffmpeg-kit-ios/ffmpeg-kit-src/prebuilt/apple-ios-arm64/ffmpeg/lib
+includedir=/Users/runner/work/ffmpeg-kit-ios/ffmpeg-kit-ios/ffmpeg-kit-src/prebuilt/apple-ios-arm64/ffmpeg/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.65.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm -framework CoreFoundation -framework CoreVideo -framework CoreMedia
+Libs.private: 
+Cflags: -I${includedir}
