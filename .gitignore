@@ -1,1 +1,2 @@
-ffmpeg-kit/
+ffmpeg-kit-src/
+**/share/
